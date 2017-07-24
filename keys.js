@@ -1,24 +1,8 @@
 console.log('this is loaded');
 
 exports.twitterKeys = {
-  consumer_key: '<input here>',
-  consumer_secret: '<input here>',
-  access_token_key: '<input here>',
-  access_token_secret: '<input here>',
+  consumer_key: '48BJ7Nc0BW6deIgtVyagx4jQO',
+  consumer_secret: '7eYavR6TZhIBvsrLKZ455Eg6hX7p8YybOKLp44G4Png8jund5f',
+  access_token_key: '888248599880118272-pV5N27ACCJhmWJuaBLHZEn6GhLRfCm8',
+  access_token_secret: 'T5thhOcR0YG9y69mK0gxIFeBPwESc5vvgcVoUe0W31iZJ',
 }
-
-var Twitter = require('twitter');
- 
-var client = new Twitter({
-  consumer_key: '',
-  consumer_secret: '',
-  access_token_key: '',
-  access_token_secret: ''
-});
- 
-var params = {screen_name: 'nodejs'};
-client.get('statuses/user_timeline', params, function(error, tweets, response) {
-  if (!error) {
-    console.log(tweets);
-  }
-});
