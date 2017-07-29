@@ -8,6 +8,7 @@ var movie = process.argv[3];
 
 
 
+
 if (command === "this-movie") {
 
 request("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=40e9cece", function (error, response, body) {
@@ -27,6 +28,9 @@ request("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=40e9cece",
 });
 
 };
+
+
+
 
 if (command === "my-tweets") {
 
@@ -49,6 +53,8 @@ client.get('statuses/user_timeline', function(error, tweets, response) {
 });
 
 };
+
+
 
 
 if (command === "spotify-this-song"){
